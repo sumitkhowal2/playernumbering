@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Player Numbering App</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 style="color:white;">Player Numbering App</h1>
+        </div>
+    </header>
+
+    <div class="container">
+      
+        <div id="inputSection">
+            <label for="totalPlayers">Enter the total number of players:</label>
+            <input type="number" id="totalPlayers" min="1" placeholder="Enter total Numbers of players" required>
+            <button id="startGameBtn">Start Game</button>
+            <button id="resetAppBtn" style="display: none;">Reset App</button>
+        </div>
+        <div id="aboutAppSection" style="display: none;">
+            <h2>About the App</h2>
+            <p>This app allows you to assign random numbers to players. Enter the total number of players, input their names, and the app will generate unique random numbers for each player.</p>
+        </div>
+        <div id="playerListContainer">
+            <h2>Enter player names:</h2>
+            <ul id="playerList"></ul>
+            <button id="assignNumbersBtn">Assign Numbers</button>
+            <button id="resetNumbersBtn" style="display: none;">Reset Numbers</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Created and Developed by <a href="https://sumit-khowal-tech-company.business.site/" id="linkname" style="color: white; text-decoration: none; font-weight: bold;" target="_blank">Sumit Khowal</a> &copy; 2024</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
